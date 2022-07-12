@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Deploy to production
         run: |
-          cd /home/natchi/website-links/
+          cd /var/www/website-links/
           git stash
           git pull origin master
-          rm -r /var/www/website-links/
-          cp -a /home/natchi/website-links/src/ /var/www/website-links/
