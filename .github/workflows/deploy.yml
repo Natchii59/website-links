@@ -12,3 +12,5 @@ jobs:
           cd /home/natchi/website-links/
           git stash
           git pull origin master
+          rm -r /var/www/website-links/
+          cp -a /home/natchi/website-links/src/ /var/www/website-links/
