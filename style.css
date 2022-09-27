@@ -42,7 +42,9 @@ body {
   gap: 2rem;
   align-items: center;
   justify-items: center;
-  margin: 2.5rem 2rem 0 2rem;
+  margin: 2rem auto 1rem auto;
+  padding: 0 1rem;
+  max-width: 600px;
 }
 
 .links a {
