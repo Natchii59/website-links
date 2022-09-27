@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
 }
 
 body {
@@ -16,11 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.head h1 {
-  font-size: 1.6rem;
-  text-decoration: underline;
+  margin-top: 2rem;
+  color: #ffffff;
 }
 
 .head .profile-picture {
@@ -28,19 +24,29 @@ body {
   height: 7rem;
   border-radius: 7rem;
   border: solid 1px #ffffff;
-  margin: 3rem 0 1rem 0;
+}
+
+.head h1 {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  margin: 0.6rem 0;
+}
+
+.head p {
+  font-size: 0.9rem;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
   align-items: center;
-  margin-top: 1.5rem;
+  justify-items: center;
+  margin: 2.5rem 2rem 0 2rem;
 }
 
 .links a {
-  margin: 1.8rem 0;
-  width: 17rem;
+  width: 100%;
   height: 3.7rem;
   font-size: 1.2rem;
   text-decoration: none;
@@ -48,14 +54,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 3px #ffffff;
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.361),
-    0.8rem 0.8rem 0 #ffffffee;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.links a:hover {
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.361), 0 0 0 #ffffffee;
+  border-radius: 0.7rem;
+  color: #242424;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px #000000;
 }
 
 .links a span {
