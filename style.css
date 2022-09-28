@@ -4,19 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: #242424;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  background: url('assets/img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(15px);
 }
 
 .head {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
-  color: #ffffff;
+  padding-top: 2rem;
 }
 
 .head .profile-picture {
@@ -39,7 +43,7 @@ body {
 .links {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 2rem;
+  gap: 1.6rem;
   align-items: center;
   justify-items: center;
   margin: 2rem auto 1rem auto;
@@ -59,7 +63,17 @@ body {
   border-radius: 0.7rem;
   color: #242424;
   background-color: #ffffff;
-  box-shadow: 0 0 8px #000000;
+  box-shadow: 0 4px 30px #00000038;
+  transition: transform 0.3s ease-in-out;
+}
+
+.links a:hover,
+.links a:focus {
+  transform: scale(103%);
+}
+
+.links a:focus {
+  outline: solid 2px rgb(136, 215, 218);
 }
 
 .links a span {
